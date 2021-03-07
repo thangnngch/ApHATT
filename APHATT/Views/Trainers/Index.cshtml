@@ -1,0 +1,65 @@
+﻿@model IEnumerable<APHATT.Models.Trainer>
+  
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainerExternal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainerInternalType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainerWorkingPlace)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainerTelephone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainerRmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainerAddress)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainerExternal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainerInternalType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainerWorkingPlace)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainerTelephone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainerRmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrainerAddress)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.TrainerID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.TrainerID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.TrainerID })
+            </td>
+        </tr>
+    }
+
+</table>

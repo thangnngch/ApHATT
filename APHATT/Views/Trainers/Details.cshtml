@@ -1,0 +1,66 @@
+﻿@model APHATT.Models.Trainer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Trainer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainerExternal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainerExternal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainerInternalType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainerInternalType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainerWorkingPlace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainerWorkingPlace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainerTelephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainerTelephone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainerRmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainerRmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainerAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainerAddress)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TrainerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FptHATTModelStoreContainer" CdmEntityContainer="FptHATTEntities">
+    <EntitySetMapping Name="ADMs">
+      <EntityTypeMapping TypeName="FptHATTModel.ADM">
+        <MappingFragment StoreEntitySet="ADM">
+          <ScalarProperty Name="ADMID" ColumnName="ADMID" />
+          <ScalarProperty Name="ADMAccount" ColumnName="ADMAccount" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="FptHATTModel.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseDescriptions" ColumnName="CourseDescriptions" />
+          <ScalarProperty Name="CourseCategoriesID" ColumnName="CourseCategoriesID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseCategories">
+      <EntityTypeMapping TypeName="FptHATTModel.CourseCategory">
+        <MappingFragment StoreEntitySet="CourseCategories">
+          <ScalarProperty Name="CourseCategoriesID" ColumnName="CourseCategoriesID" />
+          <ScalarProperty Name="CourseCategoriesName" ColumnName="CourseCategoriesName" />
+          <ScalarProperty Name="CourseCategoriesDescriptions" ColumnName="CourseCategoriesDescriptions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Enrollments">
+      <EntityTypeMapping TypeName="FptHATTModel.Enrollment">
+        <MappingFragment StoreEntitySet="Enrollment">
+          <ScalarProperty Name="EnrollmentID" ColumnName="EnrollmentID" />
+          <ScalarProperty Name="TraineeID" ColumnName="TraineeID" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="StartEnrollmentDate" ColumnName="StartEnrollmentDate" />
+          <ScalarProperty Name="EndEnrollmentDate" ColumnName="EndEnrollmentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staffs">
+      <EntityTypeMapping TypeName="FptHATTModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+          <ScalarProperty Name="StaffAccount" ColumnName="StaffAccount" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="FptHATTModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Topics">
+      <EntityTypeMapping TypeName="FptHATTModel.Topic">
+        <MappingFragment StoreEntitySet="Topic">
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+          <ScalarProperty Name="TopicName" ColumnName="TopicName" />
+          <ScalarProperty Name="TopicDescriptions" ColumnName="TopicDescriptions" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trainees">
+      <EntityTypeMapping TypeName="FptHATTModel.Trainee">
+        <MappingFragment StoreEntitySet="Trainee">
+          <ScalarProperty Name="TraineeID" ColumnName="TraineeID" />
+          <ScalarProperty Name="TraineeName" ColumnName="TraineeName" />
+          <ScalarProperty Name="TraineeAccounts" ColumnName="TraineeAccounts" />
+          <ScalarProperty Name="TraineeAge" ColumnName="TraineeAge" />
+          <ScalarProperty Name="TraineeDateOfBirth" ColumnName="TraineeDateOfBirth" />
+          <ScalarProperty Name="TraineeEducation" ColumnName="TraineeEducation" />
+          <ScalarProperty Name="TraineeMainProgrammingLanguage" ColumnName="TraineeMainProgrammingLanguage" />
+          <ScalarProperty Name="TraineeTOEIC" ColumnName="TraineeTOEIC" />
+          <ScalarProperty Name="TraineeExperienceDetails" ColumnName="TraineeExperienceDetails" />
+          <ScalarProperty Name="TraineeDepartment" ColumnName="TraineeDepartment" />
+          <ScalarProperty Name="TraineeLocation" ColumnName="TraineeLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trainers">
+      <EntityTypeMapping TypeName="FptHATTModel.Trainer">
+        <MappingFragment StoreEntitySet="Trainer">
+          <ScalarProperty Name="TrainerID" ColumnName="TrainerID" />
+          <ScalarProperty Name="TrainerExternal" ColumnName="TrainerExternal" />
+          <ScalarProperty Name="TrainerInternalType" ColumnName="TrainerInternalType" />
+          <ScalarProperty Name="TrainerWorkingPlace" ColumnName="TrainerWorkingPlace" />
+          <ScalarProperty Name="TrainerTelephone" ColumnName="TrainerTelephone" />
+          <ScalarProperty Name="TrainerRmail" ColumnName="TrainerRmail" />
+          <ScalarProperty Name="TrainerAddress" ColumnName="TrainerAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrainerTopics">
+      <EntityTypeMapping TypeName="FptHATTModel.TrainerTopic">
+        <MappingFragment StoreEntitySet="TrainerTopic">
+          <ScalarProperty Name="TrainerTopicID" ColumnName="TrainerTopicID" />
+          <ScalarProperty Name="TrainerID" ColumnName="TrainerID" />
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+          <ScalarProperty Name="TrainerTopicDate" ColumnName="TrainerTopicDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

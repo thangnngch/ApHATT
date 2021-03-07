@@ -1,0 +1,180 @@
+﻿@model IEnumerable<APHATT.Models.Trainee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm("Index", "Trainees", FormMethod.Get))
+{
+<p>
+
+    <table>
+        <tr>
+            <td>
+                -Name:
+            </td>
+
+            <td>
+                @Html.TextBox("name")
+            </td>
+
+            <td>
+                -Account:
+            </td>
+
+            <td>
+                @Html.TextBox("account")
+            </td>
+
+        </tr>
+
+
+
+        <tr>
+            <td>
+                -Date of Birth:
+            </td>
+            <td>
+                @Html.TextBox("birth")
+            </td>
+
+            <td>
+                -Education:
+            </td>
+            <td>
+                @Html.TextBox("education")
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                -Program Language:
+            </td>
+            <td>
+                @Html.TextBox("language")
+            </td>
+
+            <td>
+               -TOEIC:
+            </td>
+            <td>
+                @Html.TextBox("TOEIC")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                -Experience:
+            </td>
+            <td>
+                @Html.TextBox("ex")
+            </td>
+
+            <td>
+                -Department:
+            </td>
+            <td>
+                @Html.TextBox("department")
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                -Location:
+            </td>
+            <td>
+                @Html.TextBox("location")
+            </td>
+            <td>
+                -Age:
+            </td>
+            <td>
+                @Html.TextBox("age")
+            </td>
+
+        </tr>
+    </table>
+    <input type="submit" value="Tìm kiếm" />
+</p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeAccounts)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeAge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeDateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeEducation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeMainProgrammingLanguage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeTOEIC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeExperienceDetails)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeDepartment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TraineeLocation)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeAccounts)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeDateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeEducation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeMainProgrammingLanguage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeTOEIC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeExperienceDetails)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeDepartment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeLocation)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.TraineeID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.TraineeID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.TraineeID })
+            </td>
+        </tr>
+    }
+
+</table>

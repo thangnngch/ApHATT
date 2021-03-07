@@ -1,0 +1,61 @@
+﻿@model IEnumerable<APHATT.Models.TrainerTopic>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Topic.Course.CourseID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Topic.Course.CourseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Topic.TopicID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Topic.TopicName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Topic.TopicDescriptions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainerTopicDate)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Topic.Course.CourseID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Topic.Course.CourseName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Topic.TopicID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Topic.TopicName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Topic.TopicDescriptions)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TrainerTopicDate)
+    </td>
+
+
+</tr>
+    }
+
+</table>
+
+

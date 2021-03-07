@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0a00315810e9480c95067655e660087f" Name="Diagram1">
+        <EntityTypeShape EntityType="FptHATTModel.ADM" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FptHATTModel.Course" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FptHATTModel.CourseCategory" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FptHATTModel.Enrollment" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FptHATTModel.Staff" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FptHATTModel.sysdiagram" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FptHATTModel.Topic" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FptHATTModel.Trainee" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FptHATTModel.Trainer" Width="1.5" PointX="5.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FptHATTModel.TrainerTopic" Width="1.5" PointX="7.5" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="FptHATTModel.FK__Course__CourseCa__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="FptHATTModel.FK__Enrollmen__Cours__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="FptHATTModel.FK__Topic__CourseID__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="FptHATTModel.FK__Enrollmen__Train__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="FptHATTModel.FK__TrainerTo__Topic__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="FptHATTModel.FK__TrainerTo__Train__300424B4" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
